@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Unit Calculator</title>
+</head>
+
+<body>
+    <h1>Responsive Calculator</h1>
+    <div class="app-container grid-container">
+        <h2 id="input-h2">Input</h2>
+        <div class="flex-container input-container">
+            <label for="viewport-width">viewport-width
+                <input type="text" id="viewport-width">
+            </label>
+            <label for="viewport-height">viewport height
+                <input type="text" id="viewport-height">
+            </label>
+            <label for="desired-width">desired width
+                <input type="text" id="desired-width">
+            </label>
+            <label for="desired-height">desired height
+                <input type="text" id="desired-height">
+            </label>
+            <label for="min-font-size">min font size
+                <input type="text" id="min-font-size">
+            </label>
+            <label for="max-font-size">max font size
+                <input type="text" id="max-font-size">
+            </label>
+        </div>
+        <h2 id="output-h2">Output</h2>
+        <div class=" flex-container output-container">
+
+            <label for="percentage-width">percentage width <br>(for width)
+                <input disabled id="percentage-width"></input>
+            </label>
+            <label for="percentage-height">percentage height <br>(for height)
+                <input disabled id="percentage-height"></input>
+            </label>
+            <label for="vw">vw <br> (for width)
+                <input disabled id="vw"></input>
+            </label>
+            <label for="vh">vh <br> (for height)
+                <input disabled id="vh"></input>
+            </label>
+            <label for="vmin-width">vmin ( width )
+                <input disabled id="vmin-width"></input>
+            </label>
+            <label for="vmax-width">vmax ( width )
+                <input disabled id="vmax-width"></input>
+            </label>
+            <label for="vmin-height">vmin ( height )
+                <input disabled id="vmin-height"></input>
+            </label>
+            <label for="vmax-height">vmax ( height )
+                <input disabled id="vmax-height"></input>
+            </label>
+            <label for="em">em
+                <input disabled id="em"></input>
+            </label>
+            <label for="desired-aspect-ratio">desired aspect ratio
+                <input disabled id="desired-aspect-ratio"></input>
+            </label>
+        </div>
+    </div>
+    <button id="calculate">Calculate</button>
+    <script src="main.js"></script>
+</body>
+
+</html>
